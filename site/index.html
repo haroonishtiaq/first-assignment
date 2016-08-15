@@ -1,9 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello Haroon!</title>
+	<title>First Page!</title>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+	<style type="text/css">
+	 
+	body {font-size: 2vh; margin: 5px;width: 100%;}
+
+	.container { display: flex; width: 99%;    }
+	
+	section {border-bottom:solid; border-left: solid; color: black; float: right; margin-top: 0px;   }	
+
+	p {padding: 15px; }
+
+	.row1 { border:solid;  border-color: black; ; margin: 1%; width: 30%; background-color: #ADD8E6; display: inline-block;}
+	 
+	  .col1 {background-color: pink;width: 40%;text-align: center;  }
+
+				
+				.row2    {border: solid; border-color: black; margin: 1%; width: 30%;  background-color: #ADD8E6; display:inline-block;}
+				.col2 {background-color: grey; width: 40%; text-align: center;}
+
+	
+	.row3  {border: solid; border-color: black; margin: 1%;  width: 30%;  background-color: #ADD8E6}
+	.col3 {background-color: yellow;width: 40%; text-align: center; display: inline-block;}
+
+	
+
+
+/*media quries start*/
+
+
+/*Desktop View*/
+@media  (min-width: 992px) {
+		body {font-size: 1em; Verdana, Geneva, sans-serif; overflow-x: hidden}
+		.container { width:90%; margin: 50px; display: inline-flex; flex-wrap: wrap     } }
+		
+
+
+/*Tablet View*/
+@media (max-width: 991px) and (min-width: 768px) {
+		body {font-size: 1em; Verdana, Geneva, sans-serif; overflow-x: hidden}
+		.container { width:90%; margin: 50px; display: inline-flex; flex-wrap: wrap     } 
+		.row1 {width: 45%;  } 
+		.row2 { width:45%; margin-left:5px; }
+		.row3 {width: 93%; height: auto; margin-top: 8px;margin-left: 5px;}
+		.col3 {width: 20%}  }		
+
+
+/*Mobile View*/
+@media (max-width: 767px)  {
+		body {font-size: 1em; font-family: Verdana, Geneva, sans-serif; overflow-x: hidden}
+		.container { width:90%;  margin: 50px; display: inline-flex; flex-wrap: wrap;      } 
+		.row1 { width: 93%; } 
+		.row2 {width:93%; margin-top: 19px;margin-left: 5px;}
+		.row3 {width: 93%; margin-top: 19px;margin-left: 5px;}
+		 }
+
+
+
+	</style>
+
+    
+    
 </head>
 <body>
-<h1>Hello Haroon!</h1>
+<h1 align="center">Our Menu!!</h1>
+
+
+<div class="container" >
+	
+
+<div class="row1" > 
+<section class="col1">Chicken</section>
+<p>This is a list of chicken dishes. Chicken is the most common type of poultry in the world, and was one of the first domesticated animals. Chicken is a major worldwide source of meat and eggs for human consumption. It is prepared as food in a wide variety of ways, varying by region and culture.</p>
+</div> 
+<br><br>
+		<div class="row2">
+		<section class="col2">Beef</section>
+		<p>Beef is the culinary name for meat from cattle. Beef can be harvested from bulls, heifers or steers. Its acceptability as a food source varies in different parts of the world. Beef muscle meat can be cut into roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, etc. The bones are used for making beef stock.</p>
+		</div>
+<br><br>
+
+				<div class="row3">
+				<section class="col3">Mutton</section>
+				 <p>A sheep in its first year is called a lamb, and its meat is also called lamb. The meat of a juvenile sheep older than one year is hogget; outside North America this is also a term for the living animal. The meat of an adult sheep is mutton, a term only used for the meat, not the living animals.Lamb is the most expensive of the three types.</p>
+				 </div>
+
+
+</div>
+
+
 </body>
 </html>
