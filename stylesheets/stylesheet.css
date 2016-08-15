@@ -1,6 +1,6 @@
-body {font-size: 2vh; margin: 5px;width: 100%;}
+body {font-size: 2vh; width: 100%; }
 
-	.container { display: flex; width: 99%;    }
+	.container { display: flex; width: 99%; text-align:justify;  }
 	
 	section {border-bottom:solid; border-left: solid; color: black; float: right; margin-top: 0px;   }	
 
