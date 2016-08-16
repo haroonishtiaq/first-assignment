@@ -1,16 +1,6 @@
-		
-		body { 
-  text-align: center;
- }
+body {width: auto;}
 
-#page-wrap {
-  text-align: left;
-  width: auto;
-  margin: 0 auto;
-}
-
-/*test css*/
-#page-wrap { display: flex; }
+	.container { display: flex; width: 100%;  }
 	
 	section {border-bottom:solid; border-left: solid; color: black; float: right; margin-top: 0px;   }	
 
@@ -18,50 +8,45 @@
 
 	.row1 { border:solid;  border-color: black; ; margin: 1%; width: 30%; background-color: #ADD8E6; display: inline-block;}
 	 
-	  .col1 {background-color: pink;width: 50%;text-align: center;  }
+	  .col1 {background-color: pink;width: 40%;text-align: center;  }
 
 				
 				.row2    {border: solid; border-color: black; margin: 1%; width: 30%;  background-color: #ADD8E6; display:inline-block;}
-				.col2 {background-color: grey; width: 50%; text-align: center;}
+				.col2 {background-color: grey; width: 40%; text-align: center;}
 
 	
 	.row3  {border: solid; border-color: black; margin: 1%;  width: 30%;  background-color: #ADD8E6}
-	.col3 {background-color: yellow;width: 50%; text-align: center; display: inline-block;}*/
+	.col3 {background-color: yellow;width: 40%; text-align: center; display: inline-block;}
 
-/*Media queries*/
+	
 
 
-		/*Desktop View*/
-		
+/*media quries start*/
+
+
+/*Desktop View*/
 @media  (min-width: 992px) {
-		body {/*font-size: 1em;*/ Verdana, Geneva, sans-serif; }
-		#page-wrap { margin-left: 8px; display: inline-flex; flex-wrap: wrap     } 
-		/*.row1 {width:30%;  } 
-		.row2 { width:30%; }
-		.row3 {width: 30%;}*/
+		body {font-size: 1em; Verdana, Geneva, sans-serif; }
+		.container { margin-left: 8px; display: inline-flex; flex-wrap: wrap     } 
 	}
 		
 
 
 /*Tablet View*/
 @media (max-width: 991px) and (min-width: 768px) {
-		body {/*font-size: 1em;*/ Verdana, Geneva, sans-serif; }
-		#page-wrap { margin-left: 8px; display: inline-flex; flex-wrap: wrap     } 
+		body {font-size: 1em; Verdana, Geneva, sans-serif; }
+		.container { margin-left: 8px; display: inline-flex; flex-wrap: wrap     } 
 		.row1 {width: 46%;  } 
 		.row2 { width:46%; margin-left:5px; }
 		.row3 {width: 95%; height: auto; margin-top: 8px;margin-left: 5px;}
-		.col3 {width: 20%}  
-	}		
+		.col3 {width: 20%}  }		
 
 
 /*Mobile View*/
-
 @media (max-width: 767px) {
-		body {/*font-size: 1em; */font-family: Verdana, Geneva, sans-serif; }
-		#page-wrap { display: inline-flex; flex-wrap: wrap; } 
+		body {font-size: 1em; font-family: Verdana, Geneva, sans-serif; }
+		.container { display: inline-flex; flex-wrap: wrap; } 
 		.row1 { width: auto; } 
 		.row2 {width:auto; margin-top: 19px;}
 		.row3 {width: auto; margin-top: 19px;}
 		 }
-
-
