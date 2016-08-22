@@ -1,40 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>MY MENU!</title>
-   
-	<meta charset="utf-8">
-	
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-	<link rel="stylesheet" href="/first-assignment/stylesheets/stylesheet.css" type="text/css">
-    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>David Chu's China Bistru</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 </head>
 <body>
-<h1 align="center">Our Menu!</h1>
 
-
+<header>
+<nav id="header-nav" class="navbar navbar-default">
 <div class="container">
+<div class="navbar-header">
+	<a href="index.html" class="pull-left visible-md visible-lg">
+		<div id="logo-img" alt="Logo image"></div>
+	</a>
+	<div class="navbar-brand">
+		<a href="index.html"><h1>David Chu's China Bistro</h1></a>
+		<p>
+			<img src="images/star-k-logo.png" alt="Kosher Certification">
+			<span>Kosher Certified</span>
+		</p>
+	</div>
+
+
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      
+	</div>
 	
+	<div id="collapsable-nav" class="collapse navbar-collapse">
+		<ul id="nav-list" class="nav navbar-nav navbar-right">
+			<li>
+				<a href="menu-categories.html">
+					<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+			</li>
+			<li id="phone" class="hidden-xs">
+			<a href="tel:410-235-2265">
+				<span>410-235-2265</span></a><div>*We Deliver</div>			
+			</li>
+		</ul><!--#nav-list -->
+	</div> <!-- .collapse .navbar-collapse -->
 
-<div class="row1" > 
-<section class="col1">Chicken</section>
-<p>This is a list of chicken dishes. Chicken is the most common type of poultry in the world, and was one of the first domesticated animals. Chicken is a major worldwide source of meat and eggs for human consumption. It is prepared as food in a wide variety of ways, varying by region and culture.</p>
 </div> 
-<br><br>
-		<div class="row2">
-		<section class="col2">Beef</section>
-		<p>Beef is the culinary name for meat from cattle. Beef can be harvested from bulls, heifers or steers. Its acceptability as a food source varies in different parts of the world. Beef muscle meat can be cut into roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, etc. The bones are used for making beef stock.</p>
-		</div>
-<br><br>
+ </nav>
+	
+</header>
 
-				<div class="row3">
-				<section class="col3">Mutton</section>
-				 <p>A sheep in its first year is called a lamb, and its meat is also called lamb. The meat of a juvenile sheep older than one year is hogget; outside North America this is also a term for the living animal. The meat of an adult sheep is mutton, a term only used for the meat, not the living animals.Lamb is the most expensive of the three types.</p>
-				 </div>
-
-
+<div id="call-btn" class="visivle-xs">
+<a class="btn" href="tel:410-235-2265">
+	<span class="glyphicon glyphicon-earphone"></span>
+	410-235-2265
+</a>
 </div>
+<div id="xs-deliver" class="text-center visible-xs">*We Deliver
+</div> 
 
 
+	<div id="main-content" class="container">
+		<div class="jumbotron">
+			<img src="images/jumbotron_768.jpg" alt="Pic of resturant" class="img-responsive visible-xs">
+		</div>
+
+	<div id="home-tiles" class="row" >
+		<div class="col-md-4 col-sm-6 col-xs-12">
+		<a href="menu-categories.html"><div id="menu-tile"><span>Menu</span></div></a>
+	</div>
+	<div class="col-md-4 col-sm-6 col-xs-12">
+		<a href="single-category.html"><div id="specials-tile"><span>Specials</span></div></a>
+	</div>
+	<div class="col-md-4 col-sm-12 col-xs-12">
+		<a href="https://www.google.com/maps/place/Central+Michel+Richard/@38.8951723,-77.029039,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7b790bbf2693d:0x459186bd6043d421!8m2!3d38.8951723!4d-77.0268503" target="blank"><div id="map-tile"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.2598696222303!2d-77.02903898510485!3d38.895172279571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b790bbf2693d%3A0x459186bd6043d421!2sCentral+Michel+Richard!5e0!3m2!1sen!2s!4v1471867199226" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe><span>Map</span></div></a>
+	</div>
+	</div><!---End of Home tiles -->
+	</div><!-- End of Main Content-->
+
+<footer class="panel-footer">
+	<div class="container">
+		<div class="row">
+			<section id="hours" class="col-sm-4">
+				<span>Hours:</span><br>
+				Sun-Thurs:11:15am - 10:00pm<br>
+				Fri: 11:15am - 2:30pm<br>
+				Saturday Closed
+				<hr class="visible-xs">
+			</section>
+			<section id="address" class="col-sm-4">
+				<span>Address:</span><br>
+				7105 Reisterstown Road<br>
+				Baltimore, MD 21215
+				<p>* Delivery area within 3-4 miles, with minimum order of 20$ plus 3$ charge for all deleveries.</p>
+				<hr class="visible-xs"> 
+			</section>
+			<section id="testimonials" class="col-sm-4">
+				<p>"The best Chinese resturant I've been to! And that's saying a lot, since I've been to many!"</p>
+				<p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+			</section>
+		</div>
+		<div class="text-center">&copy; Copyright David Chu's China Bistro 2015</div>
+	</div>
+</footer>
+
+<!--- Jquery  -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
